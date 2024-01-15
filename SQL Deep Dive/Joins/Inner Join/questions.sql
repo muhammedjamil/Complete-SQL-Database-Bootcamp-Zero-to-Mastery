@@ -13,7 +13,7 @@
 * Table: products
 * Question: Show me the inventory for each product
 */
-
+SELECT a.prod_id, a.quan_in_stock, b.title,b.actor,b.price FROM "public"."inventory" AS "a" INNER JOIN "public"."products" as "b" ON b.prod_id = a.prod_id order by a.prod_id;
 
 /*
 * DB: Employees
