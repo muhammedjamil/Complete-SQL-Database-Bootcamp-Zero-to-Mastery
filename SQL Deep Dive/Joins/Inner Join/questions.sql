@@ -22,5 +22,5 @@
 */
 
 
-
+SELECT a.emp_no,concat(a.first_name, a.last_name) AS "Employee Name", b.dept_no,c.dept_name FROM "public"."employees" AS "a" INNER JOIN "public"."dept_emp" as "b" ON b.emp_no = a.emp_no INNER JOIN "public"."departments" as"c" ON c.dept_no = b.dept_no ORDER BY a.emp_no
 
